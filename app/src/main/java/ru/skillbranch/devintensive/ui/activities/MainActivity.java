@@ -1,8 +1,10 @@
-package ru.skillbranch.devintensive;
+package ru.skillbranch.devintensive.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import ru.skillbranch.devintensive.R;
 
 public class MainActivity extends AppCompatActivity {
 
