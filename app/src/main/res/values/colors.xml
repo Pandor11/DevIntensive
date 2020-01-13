@@ -7,13 +7,21 @@
     <color name="gray_light">#DBDBDB</color>
     <color name="gray">#939393</color>
     <color name="gray_dark">#5F5F5F</color>
-    <color name="black">#323232</color>
+    <color name="black">#000000</color>
 
     <!-- basic colors -->
-
+    <color name="colorPrimary">#2A1956</color>
+    <color name="colorPrimaryDark">#1C0E42</color>
+    <color name="colorAccent">#FC4C4C</color>
     <color name="green">#27D34D</color>
     <color name="blue">#2A91BD</color>
     <color name="orange">#FF9D2F</color>
     <color name="red">#FF432F</color>
+
+    <!-- grey colors -->
+
+    <color name="grey_light">#9c9c9c</color>
+    <color name="grey">#5d5d5d</color>
+
     
 </resources>
