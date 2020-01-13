@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DevIntensive</string>
+    <string name="vk_profile">VK profile</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mobile_phone">Mobile phone</string>
+    <string name="github_profile">Github profile</string>
+    <string name="about">About</string>
+    <string name="profile_label_rating">Rating</string>
+    <string name="wrote_lines_of_code">Wrote lines of code</string>
+    <string name="projects">Projects</string>
 </resources>

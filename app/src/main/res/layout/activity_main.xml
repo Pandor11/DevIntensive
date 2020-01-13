@@ -7,16 +7,92 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/spacing_normal_16"
-        android:paddingTop="@dimen/spacing_normal_16"
-        android:paddingRight="@dimen/spacing_normal_16"
-        android:paddingBottom="@dimen/spacing_normal_16"
         tools:context=".ui.activities.MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="96dp">
-            
+            android:layout_height="@dimen/size_ultra"
+            android:background="#595959">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_ultra"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Profile.Metrics.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Profile.Metrics.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_label_rating" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/font_larger_22"
+                android:layout_marginBottom="@dimen/font_larger_22"
+                android:background="@color/divider_grey_light" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_ultra"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Profile.Metrics.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Profile.Metrics.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrote_lines_of_code" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/font_larger_22"
+                android:layout_marginBottom="@dimen/font_larger_22"
+                android:background="@color/divider_grey_light" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_ultra"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Profile.Metrics.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5">
+
+                </TextView>
+
+                <TextView
+                    style="@style/Profile.Metrics.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/projects" />
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -33,7 +109,9 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="@dimen/size_big_72"
+                android:layout_marginStart="@dimen/spacing_larger_32"
                 android:layout_marginLeft="@dimen/spacing_larger_32"
+                android:layout_marginEnd="@dimen/spacing_normal_16"
                 android:layout_marginRight="@dimen/spacing_normal_16"
                 android:layout_weight="1"
                 android:gravity="bottom"
@@ -49,11 +127,12 @@
                         android:layout_height="wrap_content"
                         android:enabled="true"
                         android:focusable="true"
-                        android:hint="Mobile phone"
+                        android:hint="@string/mobile_phone"
                         android:inputType="phone"
                         android:text="89688416168"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/grey" />
+                        android:textColorHint="@color/grey"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,6 +147,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_size"
+            android:layout_marginStart="@dimen/spacing_huge_72"
             android:layout_marginLeft="@dimen/spacing_huge_72"
             android:background="@color/grey_light" />
 
@@ -84,8 +164,10 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="72dp"
+                android:layout_height="@dimen/size_big_72"
+                android:layout_marginStart="@dimen/spacing_larger_32"
                 android:layout_marginLeft="@dimen/spacing_larger_32"
+                android:layout_marginEnd="@dimen/spacing_normal_16"
                 android:layout_marginRight="@dimen/spacing_normal_16"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
@@ -101,11 +183,12 @@
                         android:layout_height="wrap_content"
                         android:enabled="true"
                         android:focusable="true"
-                        android:hint="E-mail"
+                        android:hint="@string/e_mail"
                         android:inputType="textEmailAddress"
                         android:text="My mail"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/grey" />
+                        android:textColorHint="@color/grey"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,6 +203,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_size"
+            android:layout_marginStart="@dimen/spacing_huge_72"
             android:layout_marginLeft="@dimen/spacing_huge_72"
             android:background="@color/grey_light" />
 
@@ -136,8 +220,10 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="72dp"
+                android:layout_height="@dimen/spacing_huge_72"
+                android:layout_marginStart="@dimen/spacing_larger_32"
                 android:layout_marginLeft="@dimen/spacing_larger_32"
+                android:layout_marginEnd="@dimen/spacing_normal_16"
                 android:layout_marginRight="@dimen/spacing_normal_16"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
@@ -151,9 +237,9 @@
                         android:id="@+id/vk_et"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:enabled="true"
-                        android:focusable="true"
-                        android:hint="VK profile"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:hint="@string/vk_profile"
                         android:inputType="textUri"
                         android:text="My VK profile"
                         android:textColor="@color/black"
@@ -172,6 +258,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_size"
+            android:layout_marginStart="@dimen/spacing_huge_72"
             android:layout_marginLeft="@dimen/spacing_huge_72"
             android:background="@color/grey_light" />
 
@@ -189,7 +276,9 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="72dp"
+                android:layout_marginStart="@dimen/spacing_larger_32"
                 android:layout_marginLeft="@dimen/spacing_larger_32"
+                android:layout_marginEnd="@dimen/spacing_normal_16"
                 android:layout_marginRight="@dimen/spacing_normal_16"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
@@ -205,7 +294,7 @@
                         android:layout_height="wrap_content"
                         android:enabled="true"
                         android:focusable="true"
-                        android:hint="Github profile"
+                        android:hint="@string/github_profile"
                         android:inputType="textUri"
                         android:text="My github profile"
                         android:textColor="@color/black"
@@ -224,6 +313,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_size"
+            android:layout_marginStart="@dimen/spacing_huge_72"
             android:layout_marginLeft="@dimen/spacing_huge_72"
             android:background="@color/grey_light" />
 
@@ -241,7 +331,9 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_larger_32"
                 android:layout_marginLeft="@dimen/spacing_larger_32"
+                android:layout_marginEnd="@dimen/spacing_normal_16"
                 android:layout_marginRight="@dimen/spacing_normal_16"
                 android:layout_weight="1"
                 android:gravity="center_vertical"
@@ -257,7 +349,7 @@
                         android:layout_height="wrap_content"
                         android:enabled="true"
                         android:focusable="true"
-                        android:hint="About"
+                        android:hint="@string/about"
                         android:inputType="textMultiLine"
                         android:text="ya top proger"
                         android:textColor="@color/black"
@@ -272,6 +364,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="@dimen/line_size"
+            android:layout_marginStart="@dimen/spacing_huge_72"
             android:layout_marginLeft="@dimen/spacing_huge_72"
             android:background="@color/grey_light" />
 
