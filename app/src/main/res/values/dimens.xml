@@ -32,6 +32,12 @@
     <dimen name="spacing_huge_72">72dp</dimen>
     <dimen name="size_big_72">72dp</dimen>
     <dimen name="size_ultra">112dp</dimen>
+    <dimen name="profile_image_size">256dp</dimen>
+    <dimen name="fab_right_space">8dp</dimen>
+    <dimen name="image_width">120dp</dimen>
+    <dimen name="AppBarMaxSize">256dp</dimen>
+    <dimen name="CollapsedAppBarSize">56dp</dimen>
+    <dimen name="CollapsedStatisticSize">68dp</dimen>
     todo change sizes
 
 </resources>
